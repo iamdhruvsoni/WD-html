@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: aqua">
+    <form>
+      <table>
+        <tr>
+          <td>First name:</td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              name="first_name"
+              maxlength="50"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Last name:</td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter your last name"
+              name="last_name"
+              maxlength="50"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td>
+            <input type="email" placeholder="Enter your email" name="email" />
+          </td>
+        </tr>
+        <tr>
+          <td>Mobile no:</td>
+          <td>
+            <input
+              type="text"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              placeholder="Enter your mobile no"
+              name="mobile"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" id="Male" name="gender" value="Male" required />
+            <label for="Male">Male</label>
+            <input
+              type="radio"
+              id="Female"
+              name="gender"
+              value="Female"
+              required
+            />
+            <label for="Female">Female</label>
+            <input
+              type="radio"
+              id="Other"
+              name="gender"
+              value="Other"
+              required
+            />
+            <label for="Other">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Date of birth(DOB):</td>
+          <td>
+            <input type="date" name="dob" />
+          </td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td>
+            <textarea name="address" cols="30" rows="10"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>City:</td>
+          <td>
+            <input type="text" maxlength="50" name="city" />
+          </td>
+        </tr>
+        <tr>
+          <td>Pincode:</td>
+          <td>
+            <input type="text" maxlength="6" name="pincode" />
+          </td>
+        </tr>
+        <tr>
+          <td>State:</td>
+          <td>
+            <input type="text" maxlength="20" name="state" />
+          </td>
+        </tr>
+        <tr>
+          <td>Country:</td>
+          <td>
+            <input type="text" maxlength="20" name="country" />
+          </td>
+        </tr>
+        <tr>
+          <td>Hobbies:</td>
+          <td>
+            <label>Drawing</label>
+            <input type="checkbox" name="hobbies_drawing" />
+            <label>Singing</label>
+            <input type="checkbox" name="hobbies_singing" />
+            <label>Dancing</label>
+            <input type="checkbox" name="hobbies_dancing" />
+            <label>Other</label>
+            <input type="checkbox" name="hobbies_other" />
+          </td>
+        </tr>
+        <tr>
+          <td>Qualification:</td>
+          <td>
+            <input type="checkbox" name="qualification_10th" />
+            <label>High School(10th)</label> <br />
+            <input type="checkbox" name="qualification_12th" />
+            <label>Higher School(12th)</label> <br />
+            <input type="checkbox" name="qualification_graduation" />
+            <label>Graduation(Bachelors)</label> <br />
+            <input type="checkbox" name="qualification_masters" />
+            <label>Post Graduation(Masters)</label> <br />
+            <input type="checkbox" name="qualification_phd" />
+            <label>Phd</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Courses applied for:</td>
+          <td>
+            <input type="checkbox" name="course_bca" />
+            <label>BCA</label> <br />
+            <input type="checkbox" name="course_bcom" />
+            <label>B.com</label> <br />
+            <input type="checkbox" name="course_bsc" />
+            <label>B.SC</label> <br />
+            <input type="checkbox" name="course_ba" />
+            <label>BA</label> <br />
+            <input type="checkbox" name="course_mca" />
+            <label>MCA</label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" name="" id="" />
+            <input type="reset" name="" id="" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
