@@ -1,0 +1,40 @@
+Q-1 What are the new tags added in HTML5?
+
+=>HTML-5 introduced a several new tags for the html layout such as:
+  1)<Header>
+  2)<nav>
+  3)<section>
+  4)<aside>
+  5)<article>
+  6)<Footer>
+  Besides this,other tags are given below:<main>,<figure>,<figcaption>,<canvas> and many more.
+
+Q-2 How to embed audio and video in a webpage?
+
+=>video and audio can be embed using the <audio> and <video> along with attributes in it
+  
+ <video controls width="400" height="300" src="video.mp4" type="video/mp4">
+ </video>
+
+ <video controls autoplay loop src="video.mp4" type="video/mp4">
+ </video>
+
+<audio controls autoplay loop src="audio.mp3" type="audio/mp3">
+</audio>
+
+controls: Adds play, pause, and volume controls to the video player.width and height: Set the dimensions of the video player.
+src: Specifies the video file and its type. You can include multiple <source> elements with different file formats for better browser compatibility.
+autoplay: Automatically starts playing the media when the page loads.
+loop: Causes the media to replay when it reaches the end.
+
+Q-3 Semantic element in HTML5?
+
+=>A semantic element clearly describes its meaning to both the browser and the developer.
+  Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.  
+  Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+  <article>,<aside>,<details>,<figcaption>,<figure>,<footer>,<header>,<main>,<mark>,<nav>.
+
+Q-4 Canvas and SVG tags
+
+=>The <canvas> tag in HTML is used to create dynamic, bitmap-based graphics using JavaScript.It provides a drawing surface that can be manipulated through scripting to create charts, animations, and interactive content. On the other hand, the <svg> tag is used to define vector-based graphics using XML. SVG allows for scalable and resolution-independent graphics, making it suitable for creating logos, icons, and illustrations. Both tags enable rich visual content on web pages, but <canvas> is pixel-based and suitable for complex animations, while <svg> is resolution-independent and better for static graphics with crisp edges.
+  
