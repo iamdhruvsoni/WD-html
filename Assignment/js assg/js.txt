@@ -1,0 +1,231 @@
+Q.1 What is JavaScript. How to use it? 
+
+=>JavaScript is a high-level, dynamic, and versatile programming language primarily used for web development. It enables developers to create interactive and dynamic  elements on web pages, manipulate HTML and CSS, handle browser events, and interact with server-side scripts. It's executed by browsers, making websites more engaging  and user-friendly.  
+
+Q.2 How many type of Variable in JavaScript?
+
+=>JavaScript has three types of variables:
+ var: Originally the only way to declare variables,it can be redeclared as well as reassigned and is a global scope.
+ let: Introduces block scope to variables,it cannot be redeclared but can reassigned.
+ const: Declares variables with constant values that cannot be reassigned and redeclared after initialization.It's unique.
+
+Q.3 Define a Data Types in js?
+
+=>Data types in JavaScript define the data type that a variable can store. JavaScript includes primitive and non-primitive data types. The primitive data types in  JavaScript include string, number, boolean, undefined, null, and symbol. The non-primitive data type includes the object.
+
+Q.4 What the difference between undefined and undeclare in JavaScript?
+
+=>Undefined: It occurs when a variable has been declared but has not been assigned any value. Undefined is not a keyword. Undeclared: It occurs when we try to access  any variable that is not initialized or declared earlier using the var or const keyword.
+
+Q.5 Using console.log() print out the following statement: The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John  Holmes teaches us to help one another. Using console.log() print out the following quote by Mother Teresa:
+
+=>console.log("The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.");
+ console.log('I\'m a little pencil in the hand of a writing God who is sending a love letter to the world. - Mother Teresa');
+
+Q.10 What is Condition Statement? 
+
+=>A condition statement in JavaScript is used to execute different blocks of code based on whether a specified condition evaluates to true or false. The most common type is the "if" statement, followed by "else if" and "else" for handling multiple conditions.
+  ex:-1)if :
+
+ let x = 10;
+ if (x > 5) {
+     console.log("x is greater than 5");
+ }
+     2)Else If Statement:
+
+         let time = 14;
+ if (time < 12) {
+     console.log("Good morning!");
+ } else if (time < 18) {
+     console.log("Good afternoon!");
+ } else {
+     console.log("Good evening!");
+ }
+
+   3) If Else Statement:
+
+     let isRaining = true;
+ if (isRaining) {
+     console.log("Remember to take an umbrella!");
+ } else {
+     console.log("Enjoy the weather!");
+ }
+
+Q.18 What is a Loop and Switch Case in JavaScript define that ? 
+
+=>A for loop is a control structure that allows you to repeat a block of code a certain number of times, while a switch case is a control structure that allows you to   execute different blocks of code based on the value of an expression.
+
+Q.19 What is the use of is Nan function? 
+ 
+=>In JavaScript NaN is short for "Not-a-Number". 
+ The isNaN() method returns true if a value is NaN. 
+ The isNaN() method converts the value to a number before testing it.
+
+Q.20 What is the difference between && and || in JavaScript?
+
+=>In JavaScript:
+ && is the logical AND operator. It returns true if both operands are true; otherwise, it returns false.
+ || is the logical OR operator. It returns true if at least one of the operands is true; otherwise, it returns false.
+ In JavaScript, the && operator is not typically used for defining ranges. It's primarily used as a logical operator to combine multiple conditions in conditional    statements or expressions. For defining ranges in JavaScript, you would typically use comparison operators such as <, <=, >, >=, or logical operators in combination   with those. For example:
+
+ let x = 10;
+ if (x >= 0 && x <= 100) {
+     console.log("x is within the range of 0 to 100");
+ }
+
+Q.21 What is the use of Void (0)?
+
+=>JavaScript void 0 means returning undefined (void) as a primitive value. You might come across the term “JavaScript:void(0)” while going through HTML documents. It is used to prevent any side effects caused while inserting an expression in a web page.
+
+Q.47 What is the drawback of declaring methods directly in JavaScript objects? 
+
+=>When you put methods directly into JavaScript objects, each object gets its own copy of the method. This can use up more memory, especially if you have lots of  objects. Also, if you want to change or add a method, you have to do it separately for each object, which can be a hassle. Using prototype-based methods instead lets  all objects share the same method, saving memory and making it easier to update methods across multiple objects without repeating code. It's like having one recipe  book for all your cookies instead of making a separate recipe for each type.
+
+Q.57 how many type of JS Event? How to use it? 
+
+=>JavaScript events are actions or occurrences that happen in the browser, which can be detected and used to trigger JavaScript code. There are several types of events in JavaScript, broadly categorized into:
+
+1)Mouse events: Such as click, hover, mouseenter, mouseleave.
+2)Keyboard events: Such as keydown, keyup, keypress.
+3)Form events: Such as submit, change, focus, blur.
+4)Document/window events: Such as load, resize, scroll, unload.
+ To use events in JavaScript, you typically:
+JavaScript events are actions or occurrences that happen in the browser, which can be detected and used to trigger JavaScript code. There are several types of events in JavaScript, broadly categorized into:
+
+Mouse events: Such as click, hover, mouseenter, mouseleave.
+ 1)Keyboard events: Such as keydown, keyup, keypress.
+ 2)Form events: Such as submit, change, focus, blur.
+ 3)Document/window events: Such as load, resize, scroll, unload.
+ 4)use events in JavaScript, you typically:
+
+ Select the HTML element(s) you want to attach the event to.
+ Define the event handler function that specifies what should happen when the event occurs.
+ Attach the event handler function to the selected element(s) using event listeners or inline event attributes.
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>Click Event Example</title>
+ </head>
+ <body>
+     <button onclick="alert('Button clicked!')">Click me</button>
+ </body>
+ </html>
+
+Q.59 What is Bom vs Dom in JS? 
+
+=>The Browser Object Model (BOM) in JavaScript encompasses browser-specific objects like window, navigator, and document. It facilitates tasks such as controlling window behavior, managing navigation history, and interacting with the browser environment. In contrast, the Document Object Model (DOM) represents the HTML document as a tree structure, enabling dynamic access and manipulation of document elements and content. BOM focuses on browser functionality, while DOM deals with document structure and content interaction.
+
+Q.60 Array vs object defences in JS?
+
+=>In JavaScript, arrays and objects are both used to store data, but they have different purposes and characteristics:
+
+Arrays:
+
+ Ordered collections of values accessed by numeric indices.
+ Used for storing lists of similar items.
+ Supports built-in methods like push, pop, shift, and splice for manipulation.
+ Iterable using loops or array methods.
+ 
+Objects:
+
+ Unordered collections of key-value pairs accessed by keys (strings).
+ Used for storing structured data and representing entities.
+ Supports dynamic addition and removal of properties.
+ Ideal for modeling complex data structures and relationships.
+
+Q-61 What is negative Infinity?
+
+=>In JavaScript, Negative Infinity is a special value representing the mathematical concept of negative infinity. It is the result of certain arithmetic operations, such as dividing a negative number by zero or subtracting infinity from a finite number.
+
+Q-62 Which company developed JavaScript?
+
+=>JavaScript was created at Netscape Communications by Brendan Eich in 1995. Netscape and Eich designed JavaScript as a scripting language for use with the company's flagship web browser, Netscape Navigator.
+
+Q-62 What is the difference between ViewState and SessionState?
+
+=>ViewState and SessionState are concepts used in ASP.NET web development, not directly related to JavaScript. ViewState maintains the state of client-side controls within a single page across postbacks, stored as a hidden field. SessionState stores user-specific data across multiple page requests within a user session, kept on the server. ViewState is page-specific, while SessionState is session-wide. JavaScript, however, can interact with server-side technologies to manage state through mechanisms like cookies, local storage, or AJAX requests, but ViewState and SessionState are not part of native JavaScript.
+
+Q-63 What is === operator?
+
+=>The === operator in JavaScript checks if two values are exactly the same in both value and type. It's stricter than ==, which can perform type conversion. === ensures no type conversion happens, making comparisons more precise and avoiding unexpected results.
+
+Q-64 How can the style/class of an element be changed?
+
+=>Changing style directly:
+ document.getElementById("elementId").style.property = "value";
+
+  Adding or removing classes:
+document.getElementById("elementId").classList.add("className");
+document.getElementById("elementId").classList.remove("className");
+
+Can also use querySelector for more complex selections.
+
+Q-65 How to read and write a file using JavaScript?
+
+=>
+
+Q-66 What are all the looping structures in JavaScript?
+
+There are various types of loops such as:-
+=>1)for loop
+  2)While loop
+  3)Do While loop
+  4)For in loop
+  5)For of loop
+  6)For each loop
+
+every loops have their own different loops structure 
+
+For ex:-
+
+1)For in:
+ for (variable in object) {
+   // code to be executed
+ }
+
+2)Do while loop:
+do {
+  // code to be executed
+} while (condition);
+
+
+Q-67 What is the function of the delete operator?
+
+=>The delete operator in JavaScript is used to remove a property from an object. It does not directly delete the object itself, but rather removes a specified property along with its value. When used with arrays, it can remove elements from an array, leaving undefined holes. However, it cannot delete variables or functions declared with the var, let, or const keywords.
+
+Q-68 What are all the types of Pop up boxes available in JavaScript?
+
+=>1)Alert Box
+  2)Confirm Box
+  3)Prompt Box
+
+Q-69 How can a page be forced to load another page in JavaScript?
+
+=>In JavaScript, you can force a page to load another page by setting the window.location property to the URL of the desired page.
+  Here's an example:
+
+  -> window.location.href = "https://www.example.com/newpage.html";.
+
+Q-70 What are the disadvantages of using innerHTML in JavaScript?
+
+=>Security Risk: Directly manipulating innerHTML can expose your website to cross-site scripting (XSS) attacks if the content is not properly sanitized.
+
+ Performance Impact: Modifying innerHTML involves parsing and re-rendering the entire content of the element, which can be inefficient for large or complex structures,  impacting performance.
+
+ Potential for Memory Leaks: Frequent manipulation of innerHTML can lead to memory leaks, especially in certain browsers, particularly when dealing with event   listeners or circular references.
+
+ Loss of Event Handlers: Updating innerHTML may result in the loss of existing event handlers bound to elements, requiring reattachment.
+ 
+ Code Maintainability: Code relying heavily on innerHTML for DOM manipulation may become harder to maintain and debug compared to using native DOM methods, diminishing  code readability and maintainability.
+ 
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q.26 Write find maximum number among 3 numbers using ternary operator in JS?
+      let num1 = parseFloat(prompt("Enter the first value"));
+      let num2 = parseFloat(prompt("Enter the second value"));
+      let num3 = parseFloat(prompt("Enter the third value"));
+
+      let max = num1 > num2 ? (num1 > num3 ? num1 : num3) : num2 > num3 ? num2 : num3;
+
+      document.write(
+        "The maximum of " + num1 + ", " + num2 + ", and " + num3 + " is: " + max
+      );
+    </script>
+</body>
+</html>

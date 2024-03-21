@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 1; i <= 5; i++) {
+        let row = "";
+
+        for (let j = 1; j <= 5; j++) {
+          let value;
+          if (j === 1) {
+            value = i;
+          } else if (j === 2) {
+            value = 1;
+          } else {
+            value = Math.pow(i, j - 1);
+          }
+
+          row += value + " ";
+        }
+
+        document.write("<br>");
+        document.write(row);
+      }
+    </script>
+  </body>
+</html>

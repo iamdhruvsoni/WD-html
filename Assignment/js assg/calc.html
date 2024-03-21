@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=x, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        height: 300px;
+        width: 500px;
+        margin: 100px auto;
+        border: 2px solid black;
+        padding: 10px;
+      }
+      h3 {
+        text-align: center;
+      }
+      .btns {
+        margin: 10px 10px;
+        position: relative;
+      }
+      button {
+        height: 30px;
+        width: 30px;
+        margin: 2px;
+      }
+      .ans {
+        position: absolute;
+        left: 57%;
+        top: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h3>Maths operations</h3>
+      <table border="0px">
+        <tr>
+          <td>Enter the first number:</td>
+          <td><input type="number" id="num1" /></td>
+        </tr>
+        <tr>
+          <td>Enter the second number:</td>
+          <td><input type="number" id="num2" /></td>
+        </tr>
+      </table>
+      <div class="btns">
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mul()">*</button>
+        <button onclick="div()">/</button>
+        <br />
+        <button onclick="mod()">%</button>
+      </div>
+      <span class="ans" id="result">Answer is:</span>
+    </div>
+
+    <script>
+      function add() {
+        var num1 = parseFloat(document.querySelector("#num1").value);
+        var num2 = parseFloat(document.querySelector("#num2").value);
+        var result = num1 + num2;
+        document.querySelector("#result").textContent = "Answer is: " + result;
+      }
+      function sub() {
+        var num1 = parseFloat(document.querySelector("#num1").value);
+        var num2 = parseFloat(document.querySelector("#num2").value);
+        var result = num1 - num2;
+        document.querySelector("#result").textContent = "Answer is: " + result;
+      }
+      function mul() {
+        var num1 = parseFloat(document.querySelector("#num1").value);
+        var num2 = parseFloat(document.querySelector("#num2").value);
+        var result = num1 * num2;
+        document.querySelector("#result").textContent = "Answer is: " + result;
+      }
+      function div() {
+        var num1 = parseFloat(document.querySelector("#num1").value);
+        var num2 = parseFloat(document.querySelector("#num2").value);
+        var result = num1 / num2;
+        document.querySelector("#result").textContent = "Answer is: " + result;
+      }
+      function mod() {
+        var num1 = parseFloat(document.querySelector("#num1").value);
+        var num2 = parseFloat(document.querySelector("#num2").value);
+        var result = num1 % num2;
+        document.querySelector("#result").textContent = "Answer is: " + result;
+      }
+    </script>
+  </body>
+</html>

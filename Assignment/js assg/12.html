@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 12
+
+      // Function to convert years into days
+      function yearsToDays(years) {
+        const daysInYear = 365.25; // Average number of days in a year considering leap years
+        return years * daysInYear;
+      }
+
+      // Function to convert days into years
+      function daysToYears(days) {
+        const daysInYear = 365.25; // Average number of days in a year considering leap years
+        return days / daysInYear;
+      }
+
+      // Example usage:
+      const years = parseFloat(prompt("Enter the no of Years : "));
+      const days = parseFloat(prompt("Enter the no of Days : ")); // Approximately 5 years in days
+
+      document.write(`${years} years is equal to ${yearsToDays(years)} days.`);
+      document.write(
+        `${days} days is equal to approximately ${daysToYears(days).toFixed(
+          2
+        )} years.`
+      );
+    </script>
+  </body>
+</html>

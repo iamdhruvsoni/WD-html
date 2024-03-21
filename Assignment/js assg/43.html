@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // Q.43 Write a JavaScript program to convert an array of objects into CSV string?
+      function convertArrayOfObjectsToCSV(data) {
+        const headers = Object.keys(data[0]);
+        let csv = headers.join(",") + "\n";
+        data.forEach((obj) => {
+          const row = headers.map((header) => obj[header]);
+          csv += row.join(",") + "\n";
+        });
+        return csv;
+      }
+
+      const data = [
+        { name: "John", age: 30, city: "New York" },
+        { name: "Alice", age: 25, city: "Los Angeles" },
+        { name: "Bob", age: 35, city: "Chicago" },
+      ];
+
+      const csvString = convertArrayOfObjectsToCSV(data);
+      console.log(csvString);
+
+    </script>
+</body>
+</html>

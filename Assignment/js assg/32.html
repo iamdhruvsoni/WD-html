@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q.32 Write to print factorial of given number?
+
+      function factorial(num) {
+        if (num === 0 || num === 1) {
+          return 1;
+        } else {
+          return num * factorial(num - 1);
+        }
+      }
+
+      const number = parseInt(
+        prompt("Enter a number to calculate its factorial:")
+      );
+
+      if (isNaN(number)) {
+        document.write("Invalid input. Please enter a valid number.");
+      } else {
+        document.write(" Factorial of ", number, " is ", factorial(number));
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 400px;
+        width: 450px;
+        border: 2px solid;
+        margin: 100px auto;
+        padding: 20px;
+      }
+      h3 {
+        margin-left: 30px;
+      }
+      .inp {
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Marksheet for Information Technology</h3>
+      <table>
+        <tr>
+          <td>1. C language</td>
+          <td><input type="number" class="inp" id="num1" max="50" oninput="checkInput(this)" /></td>
+        </tr>
+        <tr>
+          <td>2.C++</td>
+          <td><input type="number" class="inp" id="num2" max="50" oninput="checkInput(this)" /></td>
+        </tr>
+        <tr>
+          <td>3.Database</td>
+          <td><input type="number" class="inp" id="num3" max="50" oninput="checkInput(this)" /></td>
+        </tr>
+        <tr>
+          <td>4.HTML</td>
+          <td><input type="number" class="inp" id="num4" max="50" oninput="checkInput(this)" /></td>
+        </tr>
+        <tr>
+          <td>5.CSS</td>
+          <td><input type="number" class="inp" id="num5" max="50" oninput="checkInput(this)" /></td>
+        </tr>
+        <tr>
+          <td>6.PHP</td>
+          <td><input type="number" class="inp" id="num6" max="50" oninput="checkInput(this)" /></td>
+        </tr>
+        <tr>
+          <td>7.Core Java</td>
+          <td><input type="number" class="inp" id="num7" max="50" oninput="checkInput(this)" /></td>
+        </tr>
+      </table>
+      <button onclick="add()">Calculate Total</button>
+      <div id="totalResult"></div>
+      <div id="exceedMessage" style="color: red"></div>
+    </div>
+    <script>
+      function checkInput(input) {
+        if (input.value > 50) {
+          input.value = 50; 
+          document.querySelector("#exceedMessage").textContent =
+            "Maximum value allowed is 50 for each subject";
+        } else {
+          document.querySelector("#exceedMessage").textContent = "";
+        }
+      }
+
+      function add() {
+        var num1 = parseFloat(document.querySelector("#num1").value) || 0;
+        var num2 = parseFloat(document.querySelector("#num2").value) || 0;
+        var num3 = parseFloat(document.querySelector("#num3").value) || 0;
+        var num4 = parseFloat(document.querySelector("#num4").value) || 0;
+        var num5 = parseFloat(document.querySelector("#num5").value) || 0;
+        var num6 = parseFloat(document.querySelector("#num6").value) || 0;
+        var num7 = parseFloat(document.querySelector("#num7").value) || 0;
+
+        var total = num1 + num2 + num3 + num4 + num5 + num6 + num7;
+        var percentage = (total / 350) * 100;
+
+        var totalMessage =
+          " Total: <span style='color: blue;'> " + total + "</span> /350 ";
+        var percentageMessage = "Percentage: " + percentage.toFixed(2) + "%";
+
+        if (total > 350) {
+          document.querySelector("#exceedMessage").textContent =
+            "The total exceeds 350";
+        } else {
+          document.querySelector("#exceedMessage").textContent = "";
+        }
+
+        document.querySelector("#totalResult").innerHTML =
+          totalMessage + "<br>" + percentageMessage;
+      }
+    </script>
+  </body>
+</html>

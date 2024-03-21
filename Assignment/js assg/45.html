@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Q. 45 Write a JavaScript program to determine if a variable is array?
+
+      function isArray(variable) {
+        return Array.isArray(variable);
+      }
+
+      document.write(isArray([1, 2, 3]));
+      document.write(isArray("hello"));
+      document.write(isArray({ a: 1, b: 2 }));
+    </script>
+  </body>
+</html>

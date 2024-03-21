@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Q.14 Write a JavaScript exercise to get the extension of a filename.?
+
+      function getFileExtension(filename) {
+        return filename.slice(((filename.lastIndexOf(".") - 1) >>> 0) + 2);
+      }
+
+    
+      document.write(getFileExtension("example.txt"));
+      document.write("<br>"); 
+      document.write(getFileExtension("document.pdf"));
+      document.write("<br>"); 
+      document.write(getFileExtension("image.jpg")); 
+      document.write("<br>");
+      document.write(getFileExtension("script.js"));
+      document.write("<br>"); 
+    </script>
+  </body>
+</html>

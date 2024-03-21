@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function daysUntilChristmas() {
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const christmasDate = new Date(currentYear, 11, 25);
+
+        if (today.getMonth() === 11 && today.getDate() > 25) {
+          christmasDate.setFullYear(currentYear + 1);
+        }
+
+        const differenceInTime = christmasDate.getTime() - today.getTime();
+
+        const daysLeft = Math.ceil(differenceInTime / (1000 * 3600 * 24));
+
+        return daysLeft;
+      }
+
+      const daysLeftUntilChristmas = daysUntilChristmas();
+      document.write(
+        `There are ${daysLeftUntilChristmas} days left until next Christmas.`
+      );
+    </script>
+  </body>
+</html>

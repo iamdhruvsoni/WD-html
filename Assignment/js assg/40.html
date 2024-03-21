@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getCurrentDay() {
+        const days = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        const currentDate = new Date();
+        const day = days[currentDate.getDay()];
+        return day;
+      }
+
+      function getCurrentTime() {
+        const currentDate = new Date();
+        let hours = currentDate.getHours();
+        let minutes = currentDate.getMinutes();
+        let ampm = hours >= 12 ? "PM" : "AM";
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        return `${hours} ${ampm}: ${hours} : ${minutes}`;
+      }
+
+      const day = getCurrentDay();
+      const time = getCurrentTime();
+      document.write(`Today is ${day}. Current Time is ${time}`);
+    </script>
+  </body>
+</html>
