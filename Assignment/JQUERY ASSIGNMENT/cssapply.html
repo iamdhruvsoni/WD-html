@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery CSS Manipulation</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+
+  /* Additional CSS */
+  .box:hover {
+    transform: scale(1.1);
+  }
+
+  .box::after {
+    content: "Hover over me!";
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    pointer-events: none; /* This line ensures that the pseudo-element does not interfere with hover events */
+  }
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+<script>
+$(document).ready(function(){
+  $(".box").css("background-color", "blue");
+});
+</script>
+
+</body>
+</html>
