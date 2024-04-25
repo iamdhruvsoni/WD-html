@@ -1,0 +1,17 @@
+• What is a Bootstrap Container, and how does it work?
+
+=>Containers are the most basic layout element in bootstrap and are required when using our default grid system.
+Choose from a responsive,fixed-width container or fluid-width(meaning it's 100% wide all the time).
+
+  for ex :-1)container
+
+<div class="container">
+  <!-- Content here -->
+</div>
+
+2)Container-fluid
+
+
+<div class="container-fluid">
+  <!-- Content here -->
+</div>

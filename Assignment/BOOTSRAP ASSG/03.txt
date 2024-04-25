@@ -1,0 +1,6 @@
+• What are the default Bootstrap textsettings?
+
+
+=>Bootstrap 5 uses a default font-size of 1 rem(16px by default),and its line-height is 1.50.
+
+

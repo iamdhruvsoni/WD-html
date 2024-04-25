@@ -1,0 +1,9 @@
+• What is the difference between Bootstrap 4 and Bootstrap 5?
+
+=>Bootstrap 4 supports Multiple Css files however,Bootsrap 5 supports single css file.
+
+-bootstrap 4 uses floats for layout while,bootstrap 5 uses css flexbox for layout.
+
+-bootstrap 4 has less customization options,and bootstrap 5 has increased customization options with SASS.
+
+-bootstrap 4 has 5 breakpoints:xs,sm,md,lg,xl,while bootstrap 5 has 4 breakpoints sm,md,lg,xl.

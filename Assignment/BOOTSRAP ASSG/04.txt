@@ -1,0 +1,8 @@
+• What do you know about the Bootstrap Grid System?
+
+=>The Bootstrap system has mainly four classes:
+
+1)xs(extra small=for phones-screens less than 768px wide)
+2)sm(small=for tablets-screens equal to or greater than 768px wide)
+3)md(medium = for small/mini laptops-screens equal to or greater than 992px wide)
+4)lg(large = for laptops and desktops-screens equal to or greater than 1200 px wide)

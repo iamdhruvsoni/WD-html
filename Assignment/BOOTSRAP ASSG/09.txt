@@ -1,0 +1,20 @@
+• How can one create an alert in Bootstrap?
+
+
+=> Alerts are created with the .alert class, followed by one of the four contextual classes .alert-success, .alert-info, .alert-warning or .alert-danger
+
+- Here,sucess,danger are the color of alert box.
+
+-Syntax is given below:
+
+<div class="alert alert-success">
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Indicates a neutral informative change or action.
+</div>
+
+<div class="alert alert-warning">
+  <strong>Warning!</strong> Indicates a warning that might need attention.
+</div
