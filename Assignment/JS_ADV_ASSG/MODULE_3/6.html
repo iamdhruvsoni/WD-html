@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM VALIDATION</title>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Form Validation</h2>
+    <form id="myForm">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <span class="error" id="nameError"></span>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <span class="error" id="emailError"></span>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <span class="error" id="passwordError"></span>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          var name = document.getElementById("name").value.trim();
+          var email = document.getElementById("email").value.trim();
+          var password = document.getElementById("password").value.trim();
+          var isValid = true;
+
+          //  validate name
+
+          if (name === "") {
+            document.getElementById("nameError").textContent =
+              "Name is required";
+            isValid = false;
+          } else {
+            document.getElementById("nameError").textContent = "";
+          }
+
+          // Validate Email
+
+          function isValidEmail(email) {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+          }
+
+          if (email === "") {
+            document.getElementById("emailError").textContent =
+              "Email is required";
+            isValid = false;
+          } else if (!isValidEmail(email)) {
+            document.getElementById("emailError").textContent =
+              "Invalid email format";
+            isValid = false;
+          } else {
+            document.getElementById("emailError").textContent = "";
+          }
+
+          if (password === "") {
+            document.getElementById("passwordError").textContent =
+              "Password is required";
+            isValid = false;
+          } else {
+            document.getElementById("passwordError").textContent = "";
+          }
+
+          if (!isValid) {
+            event.preventDefault(); //Prevent form submission if not valid.
+          }
+        });
+    </script>
+  </body>
+</html>

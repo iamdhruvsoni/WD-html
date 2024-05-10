@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class Clicker</title>
+<style>
+    .clickable {
+        cursor: pointer; /* Change cursor to pointer */
+    }
+</style>
+</head>
+<body>
+
+<!-- HTML with classes -->
+<div class="clickable">Class 1</div>
+<div class="clickable">Class 2</div>
+<div class="clickable">Class 3</div>
+<button id="clickButton">Click me!</button>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('.clickable');
+    
+    elements.forEach(element => {
+        
+        element.addEventListener('click', function() {
+            alert(`You clicked ${element.textContent}`);
+        });
+    });
+    document.getElementById('clickButton').addEventListener('click', function() {
+        alert('Button clicked!');
+    });
+});
+</script>
+
+</body>
+</html>

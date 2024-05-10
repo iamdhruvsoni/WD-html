@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //    ● What is the code below going to output? alert( null || 2 || undefined );
+      document.write(alert(null || 2 || undefined));
+       /*However, alert() does not return a value, it just displays a message box.
+       So, when you write document.write(alert(null || 2 || undefined));, it first evaluates null || 2 || undefined,
+       which results in 2, and then alert(2) displays an alert with the value 2. Finally, document.write() writes
+       undefined to the document because alert() does not return a value, 
+       hence the output is "undefined".*/
+    </script>
+  </body>
+</html>

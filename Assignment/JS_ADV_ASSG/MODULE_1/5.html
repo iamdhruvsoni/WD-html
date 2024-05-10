@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Age Verification</title>
+</head>
+<body>
+  <input type="number" id="ageInput" placeholder="Enter your age">
+  
+  <script>
+    function checkAge() {
+      let age = document.getElementById("ageInput").value;
+      
+      if (age > 18) {
+        alert("Allowed");
+      } else {
+        let confirmation = confirm("Did your parents allowed");
+        if (confirmation) {
+          alert("Allowed");
+        } else {
+          alert("Not Allowed");
+        }
+      }
+    }
+    
+    document.getElementById("ageInput").addEventListener("change", checkAge);
+  </script>
+</body>
+</html>

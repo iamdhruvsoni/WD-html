@@ -1,0 +1,11 @@
+Q-1 What is JSON ?
+
+=>JSON stands for Javascript object notation.
+
+-JSON is a lightweight format for storing and transporting data.
+
+-JSON is often used when data is sent from a server to a web page.
+
+-JSON is "Self-describing" and easy to understand.
+
+-JSON is described as object in name/value pairs,and is seperated through commas.

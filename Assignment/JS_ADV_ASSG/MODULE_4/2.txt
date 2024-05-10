@@ -1,0 +1,25 @@
+Q-2 What is Promises?
+
+=>The Promise object represents the eventual completion(or failure) of an asynchronous operation and its
+  resulting value.
+
+-A Promise is in one of these states:
+
+1)Pending: intial state,neither fulfilled nor rejected.
+2)fulfilled: meaning that the operation was completed successfully.
+3)rejected: meaning that the operation failed.
+
+
+syntax is as follows.
+
+->>  let promise = new Promise(function(resolve, reject){
+     //Block of code.
+});
+
+promise can be consumed by regestering functions using .then and .catch method.
+
+1).then method= This method is invoked when a promise is either resolved or rejected.It may also be defined as a 
+   carrier that takes data from promise and further executes it successfully.
+
+2).catch method= This method is invoked when a promise is either rejected or some error has occured in execution.
+  It is used as Error handler whenever at any step there is a chance of getting an error.

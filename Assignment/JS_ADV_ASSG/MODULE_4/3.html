@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Handling.</title>
+  </head>
+  <body>
+    <script>
+      let promise = new Promise(function (resolve, reject) {
+        const x = "Promise";
+        const y = "Promise1";
+        if (x === y) {
+          resolve();
+        } else {
+          reject();
+        }
+      });
+
+      promise
+        .then(function () {
+          console.log("Success,Promise handled");
+        })
+        .catch(function () {
+          console.log("Some error has occured");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .password-toggle
+        {
+            display: inline-block;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password">
+    <input type="checkbox" class="password-toggle" id="showPassword">
+    <label for="showPassword" class="password-toggle">Show Password</label>
+
+    <script>
+        const Passwordinput = document.querySelector("#password");
+        const showPasswordCheckbox = document.querySelector("#showPassword");
+
+        showPasswordCheckbox.addEventListener("change",function()
+    {
+        if(this.checked)
+        
+        {
+            Passwordinput.type = "text";
+        }
+        else{
+            Passwordinput.type =  "password";
+        }
+    })
+    </script>
+</body>
+</html>

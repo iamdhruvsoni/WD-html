@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+const user = { name: "John Smith", age: 35 };
+
+// Convert object to JSON
+const userJSON = JSON.stringify(user);
+document.write("User JSON: " + userJSON + "<br>");
+
+// Parse JSON back into object
+const parsedUser = JSON.parse(userJSON);
+document.write("Parsed User: " + parsedUser.name + " is " + parsedUser.age + " years old.");
+</script>
+
+</body>
+</html>
