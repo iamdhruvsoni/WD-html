@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function arrayToCountObject(arr) {
+        const countObj = {};
+        // Loop through the array
+        arr.forEach((num) => {
+          // If the number is already a key in the countObj,increment its count
+          if (countObj[num]) {
+            countObj[num]++;
+          } else {
+            countObj[num] = 1;
+          }
+        });
+
+        return countObj;
+      }
+
+      console.log(arrayToCountObject([1, 2, 2, 3]));
+      console.log(arrayToCountObject([9, 9, 9, 99]));
+      console.log(arrayToCountObject([4, 3, 2, 1]));
+    </script>
+  </body>
+</html>
